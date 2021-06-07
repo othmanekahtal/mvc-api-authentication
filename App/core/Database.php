@@ -64,4 +64,11 @@ class Database
         $this->execute();
         return $this->stmt->fetchAll();
     }
+
+    public function all_column()
+    {
+        $sql = 'show columns from users';
+        $this->query($sql);
+        return $this->fetch_all_as_obj();
+    }
 }
