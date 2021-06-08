@@ -48,8 +48,8 @@ class Controller
     public function gettoken()
     {
         $headers = apache_request_headers();
-        if (isset($headers['authorization'])) {
-            return str_replace('Bearer ', '', $headers['authorization']);
+        if (isset($headers['Authorization'])) {
+            return str_replace('Bearer ', '', $headers['Authorization']);
         } else {
             return false;
         }
