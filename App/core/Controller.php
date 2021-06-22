@@ -35,8 +35,6 @@ class Controller
         $iat = time();
         $exp = $iat + 60 * 60;
         $payload = array(
-            "iss" => "localhost",
-            "aud" => "localhost",
             "iat" => $iat,
             'exp' => $exp,
 

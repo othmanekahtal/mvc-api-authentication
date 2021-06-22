@@ -92,11 +92,11 @@ class Api extends Controller
                 }
 
             } catch (\Throwable $th) {
-                print_r(json_encode("unauthorizedtoken"));
+                print_r(json_encode("unauthorized_token"));
             }
 
         } else {
-            print_r(json_encode("unauthorizedheader"));
+            print_r(json_encode("unauthorized_header"));
         }
 
     }
